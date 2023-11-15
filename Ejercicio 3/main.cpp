@@ -5,7 +5,7 @@ namespace Geometria {
     private:
         double radio;
     public:
-        Circulo(double r) : radio(r)[]
+        Circulo(double r) : radio(r){}
         double calcularArea(){
             return 3.14 * radio * radio;
         }
@@ -13,4 +13,9 @@ namespace Geometria {
             return 2 * 3.14 * radio;
         }
     };
+}
+int main() {
+    Geometria::Circulo c(5);
+    cout << "Area: " << c.calcularArea() << endl;
+    cout << "Perimetro: " << c.calcularPerimetro() << endl;
 }
