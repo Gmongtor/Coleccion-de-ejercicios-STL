@@ -17,10 +17,15 @@ namespace Matematicas {
     }
 }
 int main() {
-    std::cout << "Suma: " << Matematicas::suma(5, 3) << std::endl;
-    std::cout << "Resta: " << Matematicas::resta(5, 3) << std::endl;
-    std::cout << "Multiplicacion: " << Matematicas::multiplicacion(5, 3) << std::endl;
-    std::cout << "Division: " << Matematicas::division(5, 3) << std::endl;
-    std::cout << "Cuadrado: " << Matematicas::cuadrado(5) << std::endl;
+    int (a,b);
+    std::cout << "Ingrese el primer numero: ";
+    std::cin >> a;
+    std::cout << "Ingrese el segundo numero: ";
+    std::cin >> b;
+    std::cout << "La suma de los numeros es: " << Matematicas::suma(a,b) << std::endl;
+    std::cout << "La resta de los numeros es: " << Matematicas::resta(a,b) << std::endl;
+    std::cout << "La multiplicacion de los numeros es: " << Matematicas::multiplicacion(a,b) << std::endl;
+    std::cout << "La division de los numeros es: " << Matematicas::division(a,b) << std::endl;
+    std::cout << "El cuadrado del primer numero es: " << Matematicas::cuadrado(a) << std::endl;
     return 0;
 }
